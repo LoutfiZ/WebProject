@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>About</title>
+        <style>
+            .topbar{
+                display: flex;
+                justify-content:center;
+                background-color: darkslateblue;
+            }
+            body{
+                margin: 0;
+                background-color: whitesmoke;
+            }
+            #display{
+                margin-right: 40px;
+                color: white;
+            }
+            #center{
+                display: flex;
+                justify-content: center;
+            }
+            
+            #input-fields{
+                padding-top: 80px;
+                padding-bottom: 40px;
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+            .submit-button{
+                background-color: darkblue;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 24px;
+                padding-right: 24px;
+                font-size: 15px;
+                border: none;
+                color: white;
+                margin-left: 35%;
+            }
+            .input-item{
+                font-size: 18px;
+                padding-top: 12px;
+                margin-bottom: 36px;
+                border-top: 0;
+                border-right: 0;
+                border-bottom: 0;
+                border-left: 0;
+                border-bottom: 1px solid #ccc;
+                width: 100%;
+            }
+            form{
+                text-align: left;
+                border-color: #ccc;
+                border-width: 1px;
+                width: 580px;
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid #ccc;
+                background-color: white;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topbar">
+            <a href="index.html">
+            <h2 id="display"><u>Trips</u></h2>
+            </a>
+            <a href="about.html">
+            <h2 id="display"><u>About</u></h2>
+            </a>
+            <a href="contacts.html">
+            <h2 id="display"><u>Contacts</u></h2>
+            </a>
+        </div>
+        <h1 id="center">Wanna come on my next trip? Contact Me.</h1>
+        <form method="GET">
+        <div id="input-fields">
+            <div>
+                <input class="input-item" type="text" name="fullName" placeholder="Full Name" required>
+            </div>
+            <div>
+                <input class="input-item" type="email" name="email" placeholder="Email" required>
+            </div>
+            <div>
+                <input class="input-item" type="tel" name="contactNumber" placeholder="Contact Number" required>
+            </div>
+            <br>
+            <div>
+                <input class="submit-button"type="submit" value="Register">
+            </div>
+        </div>
+        </form>
+    </body>
+    </html>

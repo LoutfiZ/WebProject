@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	  <meta charset="UTF-8">
+	  <title>Restaurant chez Tchoupie</title>
+	  <link rel="stylesheet" href="index.css" type="text/css">
+   </head>
+   <body>
+	  <div id="topbar">
+		 <div>Menu</div>
+		 <div class="padding-top">Restaurant chez Tchoupie</div>
+		 <div>Travail pratique <br> par LoutfiZ</div>
+	  </div>
+	  <div id="botbar">
+		 <div id="bottomText">Bon Appétit!</div>
+	  </div>
+	  <div class="container">
+		 <h1>Faites votre choix:</h1>
+		 <form action="">
+			<div class="form-group">
+			   <div class="input-label">
+				  Entrée:
+				  <select id="entree" class="form-control" onchange="handleOnEntreeChange()">
+				  </select>
+				  <div id="alignImages">
+					 <img src="images/Choisir.jpg" id="image-view" />
+					 <span id="entreePrix"></span>
+				  </div>
+			   </div>
+			</div>
+			<div class="form-group1">
+			   <div class="input-label1">
+				  Repas:
+				  <select id="repas" class="form-control" onchange="handleOnRepasChange()">
+				  </select>
+				  <div id="alignImages">
+					 <img src="images/Choisir.jpg" id="image-view1" />
+					 <span id="repasPrix"></span>
+				  </div>
+			   </div>
+			</div>
+		 </form>
+		 <div id="wrap">
+			<h3>
+			   <span class="result">Sous-total : <span id="sumResult"></span></span>
+			   <span class="result">Taxes : <span id="taxesResult"></span> </span>
+			   <span class="result">Total : <span id="totalSumResult"></span></span>
+			</h3>
+		 </div>
+	  </div>
+	  <script src="script.js"></script>
+   </body>
+</html>
